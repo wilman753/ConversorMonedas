@@ -8,7 +8,7 @@ import java.net.http.HttpResponse;
 
 public class ConsultaMoneda{
      public double buscaMoneda(String base_code, String target_code){//por revizar String base_code, String target_code
-        String apiKey = "cbf07d80a82cf23a1bb8493d";
+        String apiKey = "385e0ff0ecd96785a327d537";
        URI direccion = URI.create("https://v6.exchangerate-api.com/v6/"+apiKey+"/pair/"+base_code+"/"+target_code);
 //        URI direccion = URI.create("https://v6.exchangerate-api.com/v6/"+apiKey+"/latest/"+base_code);
         HttpClient client = HttpClient.newHttpClient();
